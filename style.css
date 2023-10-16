@@ -1,0 +1,45 @@
+@keyframes animations{
+    0%{
+        border: 5px dotted blue;
+    }
+    25%{
+        border: 5px dashed green;
+    }
+    50%{
+         border: 5px dotted blue;
+    }
+    100%{
+       border: 5px dashed green;
+    }
+}
+.animations{
+    animation-name: animations;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+@keyframes images{
+    0%{
+        background-image:url("images/availability.png");
+    }
+    30%{
+        background-image:url("images/customerServices.jpeg");
+    }
+    60%{
+         background-image:url("images/maintance.jpeg");
+    }
+    90%{
+      background-image:url("images/availability.png");
+    }
+}
+.background_animation{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    animation-name: images;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
